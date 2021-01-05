@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Contact Me</title>
+		<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3/build/web/hack.css">
+<style>
+*{font-family: Hack,monospace;}
+</style>
+	</head>
+	<body>
+		<div>
+			<form method="post">
+    {% csrf_token %}
+    <b>Enter your message</b></br>
+    <input type="text" name="message" placeholder="Enter your message" maxlength="1000"></br>
+    <b>Enter your email</b></br>
+    <input type="email" name="email" placeholder="Enter your email"></br>
+    <b>Enter a name I can call you(only 10 charecters)</b></br>
+    <input type="text" name="display_name" placeholder="Enter a display name" maxlength="11"></br>
+    <input type="submit" class="button1" value="Submit your message">
+</form>
+		</div>
+	</body>
+</html>
+
